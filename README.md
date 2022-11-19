@@ -15,17 +15,17 @@ learning how to communicate with others to prevent confusion and misunderstandin
 
 <figure>
   <img src="readme_images/rfid_reader.jpg" alt="" width="300">
-  <figcaption> FIGURE 1. RFID reader and cards </figcaption>
+  <figcaption> FIGURE 1. RFID reader and cards. </figcaption>
 </figure>
-
+<br />
 <figure>
   <img src="readme_images/activity_diagram.png" alt="" width="400">
-  <figcaption> FIGURE 2. Activity Diagram </figcaption>
+  <figcaption> FIGURE 2. Activity Diagram. </figcaption>
 </figure>
-
+<br />
 <figure>
-  <img src="readme_images/bankSimul_ER-diagram.png" alt="" width="300">
-  <figcaption> FIGURE 3. ER-diagram </figcaption>
+  <img src="readme_images/BankSimul_ER-diagram.png" alt="" width="300">
+  <figcaption> FIGURE 3. ER-diagram. </figcaption>
 </figure>
 
 ### Results

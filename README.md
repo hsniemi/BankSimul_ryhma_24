@@ -20,13 +20,13 @@ learning how to communicate with others to prevent confusion and misunderstandin
 <br />
 <br />
 <figure>
-  <img src="readme_images/activity_diagram.png" alt="" width="400">
+  <img src="readme_images/activity_diagram.png" alt="" width="500">
   <figcaption> FIGURE 2. Activity Diagram. </figcaption>
 </figure>
 <br />
 <br />
 <figure>
-  <img src="readme_images/BankSimul_ER-diagram.png" alt="" width="400">
+  <img src="readme_images/BankSimul_ER-diagram.png" alt="" width="500">
   <figcaption> FIGURE 3. ER-diagram. </figcaption>
 </figure>
 

@@ -12,8 +12,10 @@ A secondary goal for the team with the project was to expand their knowledge on 
 software using the evolutionary development method (EVO) and also to learn how to work as a team on a project and 
 learning how to communicate with others to prevent confusion and misunderstandings.
 
-| ![activity_diagram](readme_images/banksimul_activity_diagram.png) |
-| *FIGURE 3. Activity Diagram* |
+<figure>
+  <img src="readme_images/banksimul_activity_diagram.png" alt="">
+  <figcaption> FIGURE 3. Activity Diagram </figcaption>
+</figure>
 
 ### Results
 The system worked as intended and it fully meets the goals of the customer.  When a customer 

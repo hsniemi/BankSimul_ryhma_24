@@ -12,13 +12,17 @@ A secondary goal for the team with the project was to expand their knowledge on 
 software using the evolutionary development method (EVO) and also to learn how to work as a team on a project and 
 learning how to communicate with others to prevent confusion and misunderstandings.
 
-
 <figure>
   <img src="readme_images/rfid_reader.jpg" alt="" width="200">
   <figcaption> FIGURE 1. RFID reader and cards. </figcaption>
 </figure>
-<br />
-<br />
+
+### Methods
+Our project team worked on this project online from home around 5-7 hours a day for the whole duration of the project. 
+For daily communication, our team used Discord, and for official communication with our instructor the team used Microsoft Teams. 
+For the frontend of the project, the team used Qt and for the backend Visual Studio Code using SQL and javaScript. 
+Github was also used in the project, mainly for storing and sharing files and version control.
+
 <figure>
   <img src="readme_images/activity_diagram.png" alt="" width="500">
   <figcaption> FIGURE 2. Activity Diagram. </figcaption>

@@ -14,7 +14,7 @@ learning how to communicate with others to prevent confusion and misunderstandin
 
 
 <figure>
-  <img src="readme_images/banksimul_rfid_reader_and_cards.jpg" alt="" width="500">
+  <img src="readme_images/banksimul_rfid_reader_and_cards.jpg" alt="" width="300">
   <figcaption> FIGURE 3. Activity Diagram </figcaption>
 </figure>
 

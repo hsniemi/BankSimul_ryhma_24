@@ -1,0 +1,7 @@
+DELIMITER //
+CREATE DEFINER=`root`@`localhost` PROCEDURE `getTen`(IN tilino VARCHAR(6), IN offset_row_count INT)
+BEGIN
+SELECT * FROM tilitapahtumat WHERE tilinumero=tilino ORDER BY pvm DESC LIMIT offset_row_count, 9;
+END
+//
+DELIMITER;

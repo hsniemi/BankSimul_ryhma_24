@@ -1,0 +1,22 @@
+DELIMITER //
+CREATE PROCEDURE `rahanSiirto`(IN saaja_tili VARCHAR(10),IN maksaja_tili VARCHAR(10), summa DOUBLE)
+BEGIN
+			START TRANSACTION;
+			SELECT count(*) into @testi1 FROM tili WHERE tilinumero=saaja_tili;
+            UPDATE tili SET saldo=saldo-summa WHERE tilinumero=maksaja_tili AND saldo-summa>0;
+            SET  @test2=row_count();
+            IF (@testi1>0 AND @test2>0) THEN   
+				COMMIT;
+				UPDATE tili SET saldo=saldo+summa WHERE tilinumero=saaja_tili;
+				SELECT enimi INTO @EN FROM asiakas INNER JOIN kortti ON asiakas.idasiakas=kortti.id_asiakas INNER JOIN
+				tili ON kortti.tilinumero=tili.tilinumero WHERE tili.tilinumero=maksaja_tili;
+				SELECT snimi INTO @SN FROM asiakas INNER JOIN kortti ON asiakas.idasiakas=kortti.id_asiakas INNER JOIN
+				tili ON kortti.tilinumero=tili.tilinumero WHERE tili.tilinumero=maksaja_tili;
+				INSERT INTO tilitapahtumat(tilinumero,pvm,tapahtuma_tyyppi,summa,enimi,snimi) VALUES(maksaja_tili,now(),'otto',-summa,@EN,@SN);
+				INSERT INTO tilitapahtumat(tilinumero,pvm,tapahtuma_tyyppi,summa,enimi,snimi) VALUES(saaja_tili,now(),'pano',summa,@EN,@SN);
+            ELSE
+				ROLLBACK;
+            END IF;
+END
+//
+DELIMITER ;

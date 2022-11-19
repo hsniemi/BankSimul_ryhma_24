@@ -1,0 +1,19 @@
+DELIMITER //
+CREATE PROCEDURE `tilitapahtuma` (IN tili  INT, IN summa DOUBLE)
+BEGIN
+		START transaction;
+        UPDATE tili SET saldo=saldo+summa WHERE idtili=tili AND saldo+summa>0;
+        SET @test=row_count();
+        IF(@test>0) THEN
+			COMMIT;
+            IF(summa>0) THEN
+				INSERT INTO tilitapahtumat(id_kortti,idtili,aika,tapahtuma_tyyppi,summa) VALUES(id_kortti,tili,NOW(),'pano',summa);
+			ELSE
+				INSERT INTO tilitapahtumat(id_kortti,idtili,aika,tapahtuma_tyyppi,summa) VALUES(id_kortti,tili,NOW(),'otto',-summa);
+			END IF;
+		ELSE
+			ROLLBACK;
+		END IF;
+	END
+//
+DELIMITER ;

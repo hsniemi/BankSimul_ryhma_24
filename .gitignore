@@ -1,0 +1,10 @@
+node_modules/
+/build*
+banksimul_frontend/banksimul_frontend.pro.user
+rfid_dll/rfid_dll.pro.user
+UI_banksimul/UI_banksimul.pro.user
+database.js
+PinCodeDLL/PinCodeDLL.pro.user
+*.pro.user
+*.pro.user.*
+restApi_dll/restApi_dll.pro.user

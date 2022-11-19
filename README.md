@@ -13,7 +13,7 @@ software using the evolutionary development method (EVO) and also to learn how t
 learning how to communicate with others to prevent confusion and misunderstandings.
 
 <figure>
-  <img src="readme_images/banksimul_activity_diagram.png" alt="" style="width=20%">
+  <img src="readme_images/banksimul_activity_diagram.png" alt="" style="width=50%">
   <figcaption> FIGURE 3. Activity Diagram </figcaption>
 </figure>
 
